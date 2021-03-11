@@ -1,8 +1,6 @@
 # Indexation and Ranked Retrieval of Textual Information
 
-[Base Architecture]() | [Memory Concerns]() | [Ranked Retrieval]()
-
-[Code Documentation]() | [Efficiency Metrics]() | [Example Queries]()
+[Base Architecture](https://github.com/FilipePires98/RankedInformationRetrieval/blob/master/docs/reports/report1/report.pdf) | [Memory Concerns](https://github.com/FilipePires98/RankedInformationRetrieval/blob/master/docs/reports/report2/report.pdf) | [Ranked Retrieval](https://github.com/FilipePires98/RankedInformationRetrieval/blob/master/docs/reports/report3/report.pdf) | [Code Documentation](https://github.com/FilipePires98/RankedInformationRetrieval/blob/master/docs/code-documentation/build/html/index.html) | [Efficiency Metrics](https://github.com/FilipePires98/RankedInformationRetrieval/tree/master/metrics) | [Example Queries](https://github.com/FilipePires98/RankedInformationRetrieval/blob/master/queries.txt)
 
 ## Description
 
