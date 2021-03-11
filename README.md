@@ -1,33 +1,49 @@
-# RI - Projects 1,2 and 3 - Indexer and Ranked Retrieval
+# Indexation and Ranked Retrieval of Textual Information
 
-This project was developed under the discipline of Information Retrieval.
+[Base Architecture]() | [Memory Concerns]() | [Ranked Retrieval]()
 
-CreateIndex.py is the Python program developed for generating indexes for a given number of text corpus.
-Its main porpuse is to read a corpus of data, process it by extracting the most important information, tokenizing the content, creating an index and persisting it.
-It can also calculate the term frequency weights, the inverse document frequency and store the term positions.
+[Code Documentation]() | [Efficiency Metrics]() | [Example Queries]()
 
-QueryIndex.py is the program created to use generated indexes to answer queries.
-Its main purpose is to tokenize a query, find the indexes that can answer it, rank the collected indexed documents and return the most relevant ones.
-The program is capable of accepting relevance feedback to improve the results' precision, with the help of the Rocchio algorithm.
+## Description
 
-Both programs are capable of executing their jobs within a memory limitation. 
-For more information on the code itself, all the documentation is acessible through docs/build/html/index.html.
+The purpose of this project was to explore the functionality of textual search-engines / information retrieval systems. 
+The developed system aims at reading an input text corpus, tokenizing its content, producing an index through approaches that consider memory limitations. Here, the system is capable of accepting relevance feedback to improve the results' precision, with the help of the Rocchio algorithm.
+Then a second component provides the implementation of a ranked retrieval method that uses the generated indexes to rapidly answer textual queries.
 
-### Prerequisites
+The execution of the project was divided in 3 stages, each with a corresponding work report:
 
-1. Clone the repository. (https://github.com/joao-alegria/RI)
-2. Change to the source directory, by running:
+- The development of a Corpus Reader, a Tokenizer and an Indexer;
+
+- The improvement of the indexation process considering memory limitations;
+
+- The creation of a Ranked Retrieval method to answer queries using generated indexes.
+
+##  Repository Structure
+
+/docs - work reports, diagrams and code documentation
+
+/feedback - feedback provided to the system for improved results (includes pseudo and user feedback)
+
+/input-small - small processed portion of the input data used 
+
+/metrics - metrics used to measure system efficiency
+
+/output-small - sample of the produced indexes
+
+/src - source code
+
+## Instructions 
+
+### Installation
+
 ```
 cd src
-```
-3. Install necessary libraries:
-```
 pip3 install -r requirements.txt
 ```
 
-### Examples
+### Usage Examples
 
-For running the code, please do so inside the src directory. Access the input and the output files by accessing the respective directories.
+To run the code, please do so inside the src directory. Access the input and the output files by accessing the respective directories.
 
 #### Creating Indexes
 
@@ -77,7 +93,6 @@ python3 QueryIndex.py  -o ../results -t simple -r 0.3 -c 1000 -l 10 -f user -n 5
 
 An example using the same configuration as the first but using the Complex Tokenizer, using the pseudo feedback considering the top 20 documents retrieved and passing 1 and 0.5 as Rocchio's alpha and beta parameters:
 
-
 ```
 python3 QueryIndex.py -o ../results -r 0.3 -c 1000 -l 10 -f pseudo -n 20 ../queries.txt ../input 1 0.5
 ```
@@ -86,5 +101,6 @@ Auxiliary script where created such as IndexAnalyzer to analyze the resulting in
 
 ## Authors
 
-* **João Alegria** - joao.p@ua.pt
-* **Filipe Pires** - filipesnetopires@ua.pt
+The authors of this repository are Filipe Pires and João Alegria, and the project was developed for the Information Retrieval Course of the Master's degree in Informatics Engineering of the University of Aveiro.
+
+For further information, please read ours reports or contact us at filipesnetopires@ua.pt or joao.p@ua.pt.
