@@ -2,6 +2,11 @@
 
 [Base Architecture](https://github.com/FilipePires98/RankedInformationRetrieval/blob/master/docs/reports/report1/report.pdf) | [Memory Concerns](https://github.com/FilipePires98/RankedInformationRetrieval/blob/master/docs/reports/report2/report.pdf) | [Ranked Retrieval](https://github.com/FilipePires98/RankedInformationRetrieval/blob/master/docs/reports/report3/report.pdf) | [Code Documentation](https://github.com/FilipePires98/RankedInformationRetrieval/blob/master/docs/code-documentation/build/html/index.html) | [Efficiency Metrics](https://github.com/FilipePires98/RankedInformationRetrieval/tree/master/metrics) | [Example Queries](https://github.com/FilipePires98/RankedInformationRetrieval/blob/master/queries.txt)
 
+![](https://img.shields.io/badge/Academical%20Project-Yes-success)
+![](https://img.shields.io/badge/Made%20With-Python-blue)
+![](https://img.shields.io/badge/License-Free%20To%20Use-green)
+![](https://img.shields.io/badge/Maintained-No-red)
+
 ## Description
 
 The purpose of this project was to explore the functionality of textual search-engines / information retrieval systems. 
